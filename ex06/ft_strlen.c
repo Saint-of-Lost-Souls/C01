@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-void    ft_strlen(char *str)
+int ft_strlen(char *str)
 {
     int count;
 
@@ -10,14 +10,16 @@ void    ft_strlen(char *str)
     {        
         count++;        
     }  
-    
+    return count;    
 }
 
 int main()
 {   
+    int length;
     char string[] = "Kill me now";
 
-    ft_strlen(string);    
+    length = ft_strlen(string);   
+    printf("the length of the string is: %d", length); 
 
     return 0;
 }
