@@ -1,7 +1,5 @@
 #include <unistd.h>
 
-#include <stdio.h>
-
 void    ft_putstr(char *str)
 {
     while(*str != '\0')
@@ -13,6 +11,6 @@ void    ft_putstr(char *str)
 
 int main()
 {
-    ft_putstr("Kill me now");
+    ft_putstr("i like cookies");
     return 0;
 }

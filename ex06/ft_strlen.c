@@ -1,24 +1,21 @@
-#include <unistd.h>
-#include <string.h>
 #include <stdio.h>
 
 int ft_strlen(char *str)
 {
-    int count;
+    int i;
 
-    while(str[count] != '\0')
+    while(str[i] != '\0')
     {        
-        count++;        
+        i++;        
     }  
-    return count;    
+    return (i);    
 }
 
 int main()
 {   
-    int length;
-    char string[] = "Kill me now";
+    int length;   
 
-    length = ft_strlen(string);   
+    length = ft_strlen("the cake is a lie");   
     printf("the length of the string is: %d", length); 
 
     return 0;
